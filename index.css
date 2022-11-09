@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container-header{
+    height: 6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5em 1em 1em;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 1em;
+}
+
+.balance{
+    color: hsl(27, 66%, 92%);
+}
+
+.balance-text{
+    font-size: 15px;
+}
+
+.balance-number{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0.2em;
+}
+
+.logo{
+    margin-left: 4em;
+}   
+
+.container-days{
+    height: 28em;
+    margin: 1em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 1em;
+}
+
+.info-title{
+    align-self: flex-start;
+    margin-top: 1.5em;
+    margin-left: 1em;
+}
+
+.info-main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    color: hsl(28, 10%, 53%);
+    border-bottom: 1px solid hsl(28, 10%, 53%);
+}
+
+.info-bars, .info-bars-days{
+    display: flex;
+    justify-content:center;
+}
+
+.info-bars{
+    align-items: flex-end;
+}
+
+.info-bars-days p{
+    width: 35px;
+    text-align: center;
+    margin: 0.2em 0.32em 1.5em;
+}
+
+.bar-hover{
+    margin: 0 0.1em 0.4em;
+    width: 42px;
+    height: 26px;
+    background-color: hsl(33, 100%, 98%);
+    color: hsl(33, 100%, 98%);
+    font-size: 14px;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 4px;
+}
+
+.bar:hover{
+    cursor: pointer;
+}
+
+.bar{
+    margin: 0 0.31em 0.4em;
+    width: 35px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 4px;
+}
+
+.bar-active{
+    background-color: hsl(186, 34%, 60%);
+}
+
+.info-data{
+    width: 100%;
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-month, .info-last-month{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-last-month{
+    margin-top: 1.2em;
+}
+
+.month-text{
+    font-size: 16px;
+    color: hsl(28, 10%, 53%);
+}
+
+.month-number{
+    font-size: 32px;
+    margin-top: 0.1em;
+    font-weight: 700;
+}
+
+.month-percentage{
+    align-self: flex-end;
+    font-size: 16px;
+    margin-bottom: 0.1em;
+    font-weight: 700;
+}
+
+@media(min-width: 375px){
+    .container-header{
+        justify-content: space-between;
+        margin: 5em 33em 1em;
+    }
+    
+    .balance{
+        margin-left: 1.5em;
+    }
+    
+    .balance-text{
+        font-size: 16px;
+    }
+    
+    .balance-number{
+        font-size: 24px;
+        margin-top: 0.1em;
+    }
+    
+    .logo{
+        margin-left: 0em;
+        margin-right: 1.5em;
+    }  
+
+    .container-days{
+        height: 28em;
+        margin: 1em 33em;
+        margin-bottom: 2em;
+    }
+
+    .info-title{
+        margin-left: 2em;
+    }
+
+    .info-bars-days p{
+        margin: 0.2em 0.7em 1.5em;
+    }
+    
+    .bar-hover{
+        margin: 0 0.25em 0.4em;
+        width: 50px;
+        height: 28px;
+    }
+
+    .bar{
+        margin: 0 0.69em 0.4em;
+    }
+
+    .info-data{
+        margin-bottom: 1em;
+    }
+
+    .month-number{
+        font-size: 40px;
+        margin-top: 0.1em;
+    }
+    
+    .month-percentage{
+        align-self: flex-end;
+        font-size: 20px;
+        margin-bottom: 0.2em;
+        font-weight: 700;
+    }
+
+}

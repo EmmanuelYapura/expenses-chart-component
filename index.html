@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="container-header">
+    <div class="balance">
+      <h3 class="balance-text">My balance</h3>
+      <p class="balance-number">$921.48</p>
+    </div>
+    <img class="logo" src="./images/logo.svg" alt="logo">
+  </header>
+
+  <section class="container-days">
+    <h2 class="info-title">
+      Spending - Last 7 days
+    </h2>
+
+    <div class="info-main">
+      <div class="info-bars">
+        <div class="bar-hover"></div>
+        <div class="bar-hover"></div>
+        <div class="bar-hover"></div>
+        <div class="bar-hover"></div>
+        <div class="bar-hover"></div>
+        <div class="bar-hover"></div>
+        <div class="bar-hover"></div>
+      </div>      
+      <div class="info-bars">
+        <div class="bar" id="mon"></div>
+        <div class="bar" id="tue"></div>
+        <div class="bar" id="wed"></div>
+        <div class="bar" id="thu"></div>
+        <div class="bar" id="fri"></div>
+        <div class="bar" id="sat"></div>
+        <div class="bar" id="sun"></div>
+      </div>
+      <div class="info-bars-days">
+        <p>mon</p>
+        <p>tue</p>
+        <p>wed</p>
+        <p>thu</p>
+        <p>fri</p>
+        <p>sat</p>
+        <p>sun</p>
+      </div>
+    </div>
+
+    <div class="info-data">
+      <div class="info-month">
+        <p class="month-text">Total this month</p>
+        <p class="month-number">$478.33</p>
+      </div>
+
+      <div class="info-last-month">
+        <p class="month-percentage">+2.4%</p>
+        <p class="month-text">from last month</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/EmmanuelYapura">Emmanuel Yapura</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
